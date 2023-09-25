@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wondrous Worlds</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" id="introContainer">
+        <h1>Welcome to the Wondrous Worlds!</h1>
+        <p>Embark on a stellar journey through our solar system and discover the magic. However, you have to guess the secret password to unlock it.</p>
+        <input type="password" id="passwordInput">
+<button id="submitPassword">Submit</button>
+<!-- Inside the container div, below the password input and submit button -->
+<button id="hintBtn">Need a hint?</button>
+<div id="hintsContainer">
+    <p class="hint" id="hint1">Hint 1: Beautiful Element.</p>
+    <p class="hint" id="hint2">Hint 2: Quenches your thirst.</p>
+    <p class="hint" id="hint3">Hint 3: Hanging with my cousin  ... ?</p>
+</div>
+
+    </div>
+
+    <div class="slider-container" id="sliderContainer">
+        <div class="slider" id="planetSlider">
+            <div><img src="mars.png" alt="Mars"></div>
+            <div><img src="earth.png" alt="Earth"></div>
+            <div><img src="venus.png" alt="Venus"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="scripts.js"></script>
+
+
+</html>
