@@ -14,13 +14,13 @@ $(document).ready(function () {
 $(document).ready(function () {
   const storyTree = {
     text: "Welcome to the Space Adventure Academy! 🌌 Before you can unlock the secrets of the planets, you must make wise choices. Ready to start?",
-    image: "1.png",
+    image: "space.jpeg",
     choices: [
       {
         text: "Power up your spaceship's engines!",
         next: {
           text: "Your spaceship speeds up! But uh-oh! A field of twinkling asteroids is ahead. Navigate safely to learn about the planets!",
-          image: "4.png",
+          image: "field-asteroids.jpeg",
           choices: [
             {
               text: "Gently steer around the asteroids.",
@@ -45,13 +45,13 @@ $(document).ready(function () {
         text: "Send a friendly space robot to guide you.",
         next: {
           text: "Your robot buddy spots a spaceship with rainbow lights! Interact wisely to discover more planets!",
-          image: "3.png",
+          image: "rainbow-spaceship.jpeg",
           choices: [
             {
               text: "Share space stories with the aliens.",
               next: {
                 text: "The aliens are thrilled! They want to play a space game before showing you the planets.",
-                image: "path_to_image5.jpg",
+                image: "aliens.jpeg",
                 choices: [
                   {
                     text: "Play a game of space chess with them.",
