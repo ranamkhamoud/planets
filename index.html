@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wondrous Worlds</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Wondrous Worlds</title>
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Orbitron">
 
-<body>
-    <div class="container" id="introContainer">
-        <h1>Welcome to the Wondrous Worlds!</h1>
-        <p>Embark on a stellar journey through our solar system and discover the magic. However, you have to guess the secret password to unlock it.</p>
-        <input type="password" id="passwordInput">
-<button id="submitPassword">Submit</button>
-<!-- Inside the container div, below the password input and submit button -->
-<button id="hintBtn">Need a hint?</button>
-<div id="hintsContainer">
-    <p class="hint" id="hint1">Hint 1: Beautiful Element.</p>
-    <p class="hint" id="hint2">Hint 2: Quenches your thirst.</p>
-    <p class="hint" id="hint3">Hint 3: Hanging with my cousin  ... ?</p>
-</div>
+    </head>
 
-    </div>
+    <body>
+        <div class="container" id="introContainer">
+            <!-- <h1>Welcome to the Wondrous Worlds!</h1> -->
+            <button id="skipToSlider">Skip to Planets Slider</button>
+            <!-- <p>Embark on a stellar journey through our solar system and discover its magic. However, you have to complete the challenges ahead.</p> -->
+
+            <div id="stellarStoriesContainer">
+                <p id="storyText">It's the year 2300. You're an astronaut on a
+                    mission to a newly discovered planet...</p>
+                <img id="storyImage" src alt="Story Image">
+
+                <div id="choiceContainer" class="choiceContainer">
+                    <button class="choice" data-next="1">Engage the thrusters to
+                        speed up.</button>
+                    <button class="choice" data-next="2">Send a drone ahead to
+                        scout.</button>
+                </div>
+
+                <button id="startOver">Start Over</button>
+
+            </div>
+        </div>
+    </body>
 
     <div class="slider-container" id="sliderContainer">
+        <p style="color: aliceblue;">Slide to show planets or click on < ></p>
+
         <div class="slider" id="planetSlider">
-            <div><img src="mars.png" alt="Mars"></div>
+            <div class="planet-wrapper">
+                <img src="mars.png" alt="Mars">
+                <div class="planet-facts">
+                    <strong>Mars</strong>
+                    <ul>
+                        <li>Often called the "Red Planet" due to its reddish
+                            appearance.</li>
+                        <li>Has the largest volcano and canyon in the solar
+                            system.</li>
+                        <li>Could possibly have once harbored life.</li>
+                    </ul>
+                </div>
+            </div>
             <div><img src="earth.png" alt="Earth"></div>
             <div><img src="venus.png" alt="Venus"></div>
+            <div><img src="mercury.png" alt="Mercury"></div>
+            <div><img src="jupiter.png" alt="Jupiter"></div>
+            <div><img src="saturn.png" alt="Saturn"></div>
+            <div><img src="uranus.png" alt="Uranus"></div>
+            <div><img src="neptune.png" alt="Neptune"></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="scripts.js"></script>
-
 
 </html>
