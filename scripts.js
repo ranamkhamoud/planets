@@ -64,7 +64,7 @@ $(document).ready(function () {
                   {
                     text: "Race the spaceship for fun.",
                     next: {
-                      text: "You had fun, but missed the chance to learn about some planets. Choose wisely next time to uncover their tales!",
+                      text: "You had fun, but missed the chance to learn about some planets. Choose wisely next time to uncover their tales! Try again!",
                       image: "path_to_image7.jpg",
                       next: "end",
                     },
@@ -75,7 +75,7 @@ $(document).ready(function () {
             {
               text: "Politely decline and continue on your journey.",
               next: {
-                text: "It's okay to be cautious in space. You continue on your journey, but miss out on the secrets the aliens could have shared.",
+                text: "It's okay to be cautious in space. You continue on your journey, but miss out on the secrets the aliens could have shared. Try again!",
                 image: "path_to_image8.jpg",
                 next: "end",
               },
@@ -110,7 +110,6 @@ $(document).ready(function () {
     const choiceIdx = $(this).data("idx");
     let nextNode = currentNode.choices[choiceIdx].next;
 
-    // This while loop will handle multiple depths.
     while (nextNode && !nextNode.choices) {
       if (nextNode.next === "end") {
         alert(nextNode.text);
