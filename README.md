@@ -1,4 +1,4 @@
 # planets
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1OXUSjCvIT4JffYZVRnhc_EWWj1Ph5raN/view?usp=sharing)
-
+### The website: 
+https://stalwart-basbousa-a1afd8.netlify.app/
